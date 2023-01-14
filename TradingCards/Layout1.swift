@@ -18,32 +18,39 @@ struct Layout1: View {
                     Image("Image")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 100.0, height: 100.0)
+                        .frame(width: 90.0, height: 90.0)
                     
                     Text("Charizard")
                         .padding()
-                        .font(.title)
+                        .font(.largeTitle.italic())
                         .fontWeight(.heavy)
+                        .frame(width: 200.0, height: 90.0)
+                
                         
                     Image("FireIcon")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 100.0, height: 100.0)
+                        .frame(width: 90.0, height: 90.0)
                     
                 }
-                ZStack{
-                    Color.black
-                        .frame(width: 300.0, height: 300.0)
-                    Color.white
-                        .frame(width: 295.0, height: 295.0)
-                    Image("Charizard")
+                    Image("Charizard2")
                         .resizable()
-                        .scaledToFit()
-                        .frame(width: 300.0, height: 300.0)
-                }
-                Text("No.006")
-                    .padding(EdgeInsets(top: 12, leading: 20, bottom: 12, trailing: 20))
-                    .background(Color.yellow)
+                        .frame(width: 350.0, height: 300.0)
+                        .scaledToFill()
+
+                // overlay don't need to be square over square
+                
+                        .overlay(
+                            Rectangle()
+                                .stroke(LinearGradient(colors: [Color("bg3"),Color("bg4")], startPoint: .top, endPoint: .bottom), lineWidth: 10))
+
+                
+                Text("No.006 Flame Pokemon HT:5'07‘’ WT: 199.5lbs")
+                    .font(Font.system(size: 17).italic())
+                    .padding(EdgeInsets(top: 12, leading: 10, bottom: 12, trailing: 10))
+                    .overlay(
+                        Rectangle()
+                            .stroke(LinearGradient(colors: [Color("bg3"),Color("bg4")], startPoint: .top, endPoint: .bottom), lineWidth: 10))
                     .cornerRadius(10)
                 Spacer()
             }
