@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct Layout1View: View {
+struct Layout1View: TradingCard {
     var body: some View {
         ZStack{
+            // "fireBackground"
             LinearGradient(colors: [.yellow, .red], startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             
@@ -63,6 +64,7 @@ struct Layout1View: View {
 //                    )
                     .cornerRadius(10)
                 Spacer()
+                Text("......")
             }
         }
     }
@@ -70,6 +72,6 @@ struct Layout1View: View {
 
 struct Layout1View_Previews: PreviewProvider {
     static var previews: some View {
-        Layout1View()
+        Layout1View(TradingCard)
     }
 }
