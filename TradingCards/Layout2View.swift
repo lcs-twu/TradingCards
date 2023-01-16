@@ -1,16 +1,16 @@
 //
-//  Layout1.swift
+//  Layout2View.swift
 //  TradingCards
 //
-//  Created by Tom Wu on 2023-01-12.
+//  Created by Tom Wu on 2023-01-14.
 //
 
 import SwiftUI
 
-struct Layout1: View {
+struct Layout2View: View {
     var body: some View {
         ZStack{
-            LinearGradient(colors: [.yellow, .red], startPoint: .top, endPoint: .bottom)
+            LinearGradient(colors: [.blue, .white], startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             
             VStack{
@@ -33,7 +33,7 @@ struct Layout1: View {
                         .frame(width: 90.0, height: 90.0)
                     
                 }
-                    Image("Charizard2")
+                    Image("Charizard")
                         .resizable()
                         .frame(width: 350.0, height: 300.0)
                         .scaledToFill()
@@ -53,14 +53,6 @@ struct Layout1: View {
                         LinearGradient(colors: [Color("bg5"), Color("bg6"), Color("bg6"), Color("bg5")], startPoint: .topLeading, endPoint: .bottomTrailing)
 
                     )
-//                    .overlay(
-//                        Rectangle()
-//                            .stroke(
-//
-//                                LinearGradient(colors: [.blue, .yellow], startPoint: .topLeading, endPoint: .bottomTrailing)
-//
-//                                , lineWidth: 10)
-//                    )
                     .cornerRadius(10)
                 Spacer()
             }
@@ -68,8 +60,8 @@ struct Layout1: View {
     }
 }
 
-struct Layout1_Previews: PreviewProvider {
+struct Layout2View_Previews: PreviewProvider {
     static var previews: some View {
-        Layout1()
+        Layout2View()
     }
 }
