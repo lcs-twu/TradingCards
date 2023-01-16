@@ -7,11 +7,14 @@
 
 import SwiftUI
 
-struct Layout1View: TradingCard {
+struct Layout1View: View {
+    
+    let pokemon: TradingCard
+    
     var body: some View {
         ZStack{
             // "fireBackground"
-            LinearGradient(colors: [.yellow, .red], startPoint: .top, endPoint: .bottom)
+            LinearGradient(colors: pokemon.background, startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             
             VStack{
@@ -21,20 +24,20 @@ struct Layout1View: TradingCard {
                         .scaledToFit()
                         .frame(width: 90.0, height: 90.0)
                     
-                    Text("Charizard")
+                    Text(pokemon.pokemonname)
                         .padding()
                         .font(.largeTitle.italic())
                         .fontWeight(.heavy)
                         .frame(width: 200.0, height: 90.0)
                 
                         
-                    Image("FireIcon")
+                    Image(pokemon.energy)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 90.0, height: 90.0)
                     
                 }
-                    Image("Charizard2")
+                Image(pokemon.image2)
                         .resizable()
                         .frame(width: 350.0, height: 300.0)
                         .scaledToFill()
@@ -43,10 +46,10 @@ struct Layout1View: TradingCard {
                 
                         .overlay(
                             Rectangle()
-                                .stroke(LinearGradient(colors: [Color("bg3"),Color("bg4")], startPoint: .top, endPoint: .bottom), lineWidth: 10))
+                                .stroke(LinearGradient(colors: pokemon.background2, startPoint: .top, endPoint: .bottom), lineWidth: 10))
 
                 
-                Text("No.006 Flame Pokemon HT:5'07‘’ WT: 199.5lbs")
+                Text(pokemon.description1)
                     .font(Font.system(size: 17).italic())
                     .padding(EdgeInsets(top: 12, leading: 10, bottom: 12, trailing: 10))
                     .background(
@@ -54,17 +57,12 @@ struct Layout1View: TradingCard {
                         LinearGradient(colors: [Color("bg5"), Color("bg6"), Color("bg6"), Color("bg5")], startPoint: .topLeading, endPoint: .bottomTrailing)
 
                     )
-//                    .overlay(
-//                        Rectangle()
-//                            .stroke(
-//
-//                                LinearGradient(colors: [.blue, .yellow], startPoint: .topLeading, endPoint: .bottomTrailing)
-//
-//                                , lineWidth: 10)
-//                    )
                     .cornerRadius(10)
                 Spacer()
                 Text("......")
+                Spacer()
+                Spacer()
+                Spacer()
             }
         }
     }
@@ -72,6 +70,6 @@ struct Layout1View: TradingCard {
 
 struct Layout1View_Previews: PreviewProvider {
     static var previews: some View {
-        Layout1View(TradingCard)
+        Layout1View(pokemon: SlowBro)
     }
 }

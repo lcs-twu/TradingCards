@@ -26,17 +26,12 @@ struct ContentView: View {
         
         List{
             VStack {
-                NavigationLink(destination: {
-                    Layout1View()
-                }, label: {
-                    Text("Layout1")
-                })
+              Text("...") //NavigationLink(destination: {
+//                    Layout1View()
+//                }, label: {
+//                    Text("Layout1")
+//                })
                 
-                NavigationLink(destination: {
-                    Layout2View()
-                }, label: {
-                    Text("Layout2")
-                })
             }
             .listRowBackground(Color.yellow)
             .padding()
