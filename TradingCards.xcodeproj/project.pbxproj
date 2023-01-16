@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		81C725892970943000D5694D /* TradingCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C725882970943000D5694D /* TradingCardsApp.swift */; };
-		81C7258B2970943000D5694D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7258A2970943000D5694D /* ContentView.swift */; };
 		81C7258D2970943300D5694D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C7258C2970943300D5694D /* Assets.xcassets */; };
 		81C725902970943300D5694D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C7258F2970943300D5694D /* Preview Assets.xcassets */; };
 		81C72597297094C500D5694D /* Layout1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C72596297094C500D5694D /* Layout1View.swift */; };
 		81C7259D297398E700D5694D /* TradingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7259C297398E700D5694D /* TradingCard.swift */; };
+		81C725A02975988B00D5694D /* PokemonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C7259F2975988A00D5694D /* PokemonListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81C725852970943000D5694D /* TradingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C725882970943000D5694D /* TradingCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsApp.swift; sourceTree = "<group>"; };
-		81C7258A2970943000D5694D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81C7258C2970943300D5694D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C7258F2970943300D5694D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81C72596297094C500D5694D /* Layout1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout1View.swift; sourceTree = "<group>"; };
 		81C7259C297398E700D5694D /* TradingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCard.swift; sourceTree = "<group>"; };
+		81C7259F2975988A00D5694D /* PokemonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 		81C725872970943000D5694D /* TradingCards */ = {
 			isa = PBXGroup;
 			children = (
-				81C7258A2970943000D5694D /* ContentView.swift */,
+				81C7259F2975988A00D5694D /* PokemonListView.swift */,
 				81C72596297094C500D5694D /* Layout1View.swift */,
 				81C7259E29758A4D00D5694D /* Model */,
 				81C7258C2970943300D5694D /* Assets.xcassets */,
@@ -151,9 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C725A02975988B00D5694D /* PokemonListView.swift in Sources */,
 				81C7259D297398E700D5694D /* TradingCard.swift in Sources */,
 				81C72597297094C500D5694D /* Layout1View.swift in Sources */,
-				81C7258B2970943000D5694D /* ContentView.swift in Sources */,
 				81C725892970943000D5694D /* TradingCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
