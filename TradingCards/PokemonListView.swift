@@ -23,10 +23,10 @@ struct PokemonListView: View {
                 Text(SlowBro.pokemonname)
             })
             
-            
-            
         }
-        .navigationTitle("My Favourite Pokemons")
+        .background(.orange)
+                    .scrollContentBackground(.hidden)
+                    .navigationTitle("My Favourite Pokemons")
     }
 }
 
