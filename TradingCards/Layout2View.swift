@@ -20,7 +20,7 @@ struct Layout2View: View {
                         .scaledToFit()
                         .frame(width: 90.0, height: 90.0)
                     
-                    Text("Charizard")
+                    Text("SlowBro")
                         .padding()
                         .font(.largeTitle.italic())
                         .fontWeight(.heavy)
@@ -33,7 +33,7 @@ struct Layout2View: View {
                         .frame(width: 90.0, height: 90.0)
                     
                 }
-                    Image("Charizard")
+                    Image("SlowBro")
                         .resizable()
                         .frame(width: 350.0, height: 300.0)
                         .scaledToFill()
