@@ -9,18 +9,12 @@ import SwiftUI
 
 struct PokemonListView: View {
     var body: some View {
-        List {
+        List(allPokemons) { currentPokemon in
             
             NavigationLink(destination: {
-                Layout1View(pokemon: Charizard)
+                Layout1View(pokemon: currentPokemon)
             }, label: {
-                Text(Charizard.pokemonname)
-            })
-            
-            NavigationLink(destination: {
-                Layout1View(pokemon: SlowBro)
-            }, label: {
-                Text(SlowBro.pokemonname)
+                Text(currentPokemon.pokemonname)
             })
             
         }

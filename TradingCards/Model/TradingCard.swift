@@ -36,4 +36,6 @@ let SlowBro = TradingCard(
     description1: "......",
     description2: "......")
 
-let allPokemons = ["Charizard", "SlowBro"]
+let allPokemons = [Charizard, SlowBro]
+
+
