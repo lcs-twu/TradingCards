@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct TradingCard {
-    
+struct TradingCard: Identifiable {
+    let id = UUID()
     let pokemonname: String
     let energy: String
     let background: [Color]
@@ -18,7 +18,22 @@ struct TradingCard {
     let description2: String
 }
 
-let Charizard = TradingCard(pokemonname: "Charizard", energy: "FireIcon", background: [.yellow, .red],background2: [Color("bg3"),Color("bg4")], image2: "Charizard2", description1: "No.006 Flame Pokemon HT:5'07‘’ WT: 199.5lbs", description2: ".......")
+let Charizard = TradingCard(
+    pokemonname: "Charizard",
+    energy: "FireIcon",
+    background: [Color.yellow, Color.red],
+    background2: [Color("bg3"),Color("bg4")],
+    image2: "Charizard2",
+    description1: "No.006 Flame Pokemon HT:5'07‘’ WT: 199.5lbs",
+    description2: ".......")
 
-let SlowBro = TradingCard(pokemonname: "SlowBro", energy: "WaterIcon", background: [.blue, .white], background2: [Color("bg3"),Color("bg4")], image2: "SlowBro", description1: "......", description2: "......")
+let SlowBro = TradingCard(
+    pokemonname: "SlowBro",
+    energy: "WaterIcon",
+    background: [Color.blue, Color.white],
+    background2: [Color("bg3"),Color("bg4")],
+    image2: "SlowBro",
+    description1: "......",
+    description2: "......")
 
+let allPokemons = ["Charizard", "SlowBro"]

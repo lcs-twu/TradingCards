@@ -70,6 +70,6 @@ struct Layout1View: View {
 
 struct Layout1View_Previews: PreviewProvider {
     static var previews: some View {
-        Layout1View(pokemon: SlowBro)
+        Layout1View(pokemon: Charizard)
     }
 }
